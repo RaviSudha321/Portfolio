@@ -4,6 +4,7 @@ import './Header.scss';
 import {Link} from 'react-router-dom';
 
 
+
 function Header() {
 
     return (
@@ -29,7 +30,7 @@ function Header() {
                         </Col>
                     </Row>
                 </Container>
-            </section>
+            </section> 
         </>
 
     );
