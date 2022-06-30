@@ -21,7 +21,7 @@ function Header() {
                                 <ul className='menu'>
                                     <Link to="/">Home</Link>
                                     <Link to="/about">About</Link>
-                                    <Link to="/about">Skills</Link>
+                                    <Link to="/skills">Skills</Link>
                                     <Link to="/education">Portfolio</Link>
                                     <Link to="/portfolio">Resume</Link>
                                     <Link to="/contact">Contact</Link>

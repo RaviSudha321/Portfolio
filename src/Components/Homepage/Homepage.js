@@ -16,7 +16,7 @@ function Homepage() {
                         <Row className="hero_sec_row">
                             <Col md={6}>
                                 <div className="hero_image">
-                                   <img src={hero_image} alt="image" />
+                                   <img src={hero_image} alt="hero image" />
                                 </div>
                             </Col>
                             <Col md={6}>
