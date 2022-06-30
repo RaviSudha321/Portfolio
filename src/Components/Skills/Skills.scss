@@ -1,0 +1,52 @@
+.skills_main_sec {
+    padding: 80px 0;
+    background-color: #F0EBE3;
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+
+    .title {
+        font-size: 36px;
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: "Nunito", sans-serif;
+        line-height: 1.7;
+    }
+
+    .skills_inner_sec {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        grid-row-gap: 50px;
+        margin-top: 50px;
+
+        .skill_box {
+            width: calc(50% - 40px);
+
+            .skill_title {
+                font-size: 24px;
+                line-height: 1.3;
+                font-family: "Nunito", sans-serif;
+                font-weight: 600;
+            }
+
+            .progress {
+                background-color: #fff;
+                height: 20px;
+
+                .progress-bar {
+                    background-color: #576f72;
+                    font-family: 'Nunito', sans-serif;
+                  }
+            }
+        }
+    }
+
+}
