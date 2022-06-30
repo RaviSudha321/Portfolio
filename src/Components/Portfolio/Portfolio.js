@@ -2,7 +2,7 @@ import React from "react";
 import './Portfolio.scss';
 import PortfolioItem from './PortfolioItem.js';
 import { Container, Row, Col } from "react-bootstrap";
-import PortfoliosData from '../Data/PortfoliosData.js';
+import PortfoliosData from '.././Data/PortfoliosData.js';
 
 
 function Portfolio() {

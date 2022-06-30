@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Header from './Components/Header/Header.js';
 import Footer from './Components/Footer/Footer.js';
@@ -14,18 +15,20 @@ import { Routes, Route } from "react-router-dom";
 function App() {
 
   return (
-    <div className="App">
-        <Header />
-          <Routes>
-            <Route exact={true} path="/" element={<Homepage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        <Footer />
-    </div>
+    <>
+      <div className="App">
+          <Header />
+            <Routes>
+              <Route exact={true} path="/" element={<Homepage />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          <Footer />
+      </div>
+    </>
   );
   
 }
