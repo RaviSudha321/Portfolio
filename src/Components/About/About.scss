@@ -1,0 +1,48 @@
+.about_main_sec {
+    padding: 80px 0;
+    background-color: #F0EBE3;
+    min-height: calc(100vh - 154px);
+    display: flex;
+    align-items: center;
+
+    .title {
+        font-size: 36px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .about_description {
+        padding-right: 40px;
+    }
+
+    .about_detail {
+        padding-left: 40px;
+
+        h3 {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .about_detail_inner {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            grid-row-gap: 30px;
+
+            .detail_box {
+                width: 50%;
+            }
+        }
+    }
+}

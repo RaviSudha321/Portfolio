@@ -1,0 +1,59 @@
+.hero_sec {
+    padding: 80px 0;
+    background-color: #F0EBE3;
+    min-height: calc(100vh - 154px);
+    display: flex;
+    align-items: center;
+
+    .hero_sec_row {
+        align-items: center;
+
+        .hero_image {
+            padding-right: 80px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .hero_content {
+            text-align: left;
+            font-family: 'Nunito', sans-serif;
+
+            .greeting_text {
+                font-size: 50px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #576f72;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+            .name, .profile {
+                font-size: 60px;
+                line-height: 1.2;
+            }
+
+            .global_btn {
+                margin-top: 40px;
+
+                .btn_text {
+                    text-decoration: none;
+                    color: #576f72;
+                    font-size: 20px;
+                    font-weight: 700;
+                    border: 2px solid #576f72;
+                    padding: 10px 25px;
+                    display: inline-block;
+                    border-radius: 7px;
+                    transition: all 0.2s linear;
+
+                    &:hover {
+                        background-color: #576f72;
+                        color: #fff;
+                    }
+                }
+            }
+            
+        }
+    }
+}

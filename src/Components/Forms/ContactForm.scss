@@ -1,0 +1,50 @@
+.form_contact {
+
+    .field_group {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        input, textarea {
+            border: 1px solid #000;
+            font-size: 18px;
+            line-height: 1.6;
+            outline: none;
+            box-shadow: none;
+            padding: 7px 15px;
+            background-color: transparent;
+        }
+    }
+
+    .global_btn {
+        margin-top: 30px;
+
+        .btn_text {
+            text-decoration: none;
+            color: #576f72;
+            font-size: 20px;
+            font-weight: 600;
+            border: 2px solid #576f72;
+            padding: 10px 25px;
+            border-radius: 7px;
+            line-height: 1;
+            width: fit-content;
+            transition: all 0.2s linear;
+            margin-left: auto;
+    
+            &:hover {
+                background-color: #576f72;
+                color: #fff;
+            }
+        }
+    }
+
+}
