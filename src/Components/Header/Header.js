@@ -1,6 +1,6 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
 import './Header.scss';
+import {Container, Row, Col} from 'react-bootstrap';
 import {Link, NavLink} from 'react-router-dom';
 
 
@@ -23,6 +23,7 @@ function Header() {
                                     <NavLink to="/about">About</NavLink>
                                     <NavLink to="/skills">Skills</NavLink>
                                     <NavLink to="/portfolio">Portfolio</NavLink>
+                                    <NavLink to="/testimonials">Testimonials</NavLink>
                                     <NavLink to="/experience">Experience</NavLink>
                                     <NavLink to="/contact">Contact</NavLink>
                                 </ul>
