@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import './Header.scss';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 
 
@@ -14,17 +14,17 @@ function Header() {
                 <Container className="header_container">
                     <Row className='header_row'>
                         <Col className='logo_col' md={4}>
-                        <Link exact to="/"><span>Portfolio</span></Link>
+                            <Link exact to="/"><span>Portfolio</span></Link>
                         </Col>
                         <Col className="menu_col" md={8}> 
                             <div className='header_menu'>
                                 <ul className='menu'>
-                                    <Link to="/">Home</Link>
-                                    <Link to="/about">About</Link>
-                                    <Link to="/skills">Skills</Link>
-                                    <Link to="/portfolio">Portfolio</Link>
-                                    <Link to="/experience">Experience</Link>
-                                    <Link to="/contact">Contact</Link>
+                                    <NavLink to="/">Home</NavLink>
+                                    <NavLink to="/about">About</NavLink>
+                                    <NavLink to="/skills">Skills</NavLink>
+                                    <NavLink to="/portfolio">Portfolio</NavLink>
+                                    <NavLink to="/experience">Experience</NavLink>
+                                    <NavLink to="/contact">Contact</NavLink>
                                 </ul>
                             </div>
                         </Col>

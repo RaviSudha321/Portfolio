@@ -40,7 +40,7 @@
                     transition: all 0.2s linear;
                     font-family: 'Nunito', sans-serif;
 
-                    &:hover {
+                    &:hover, &.active {
                         color: #E4DCCF;
                     }
                 }
