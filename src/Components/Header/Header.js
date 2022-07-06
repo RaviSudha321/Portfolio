@@ -25,6 +25,7 @@ function Header() {
                                     <NavLink to="/portfolio">Portfolio</NavLink>
                                     <NavLink to="/testimonials">Testimonials</NavLink>
                                     <NavLink to="/experience">Experience</NavLink>
+                                    <NavLink to="/faqs">Faqs</NavLink>
                                     <NavLink to="/contact">Contact</NavLink>
                                 </ul>
                             </div>
