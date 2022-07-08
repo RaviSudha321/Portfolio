@@ -8,11 +8,18 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 
 function Faqs() {
 
-
     const [isActive, setActive] = useState(false);
 
     function activeTab(e) {
         setActive(!isActive);
+    }
+
+    /* Load More Function */
+    const faqsPerRow = 4;
+    const [next, setNext] = useState(faqsPerRow);
+
+    const loadFaqs = () => {
+        setNext(next + faqsPerRow);
     }
 
     return (
@@ -26,9 +33,9 @@ function Faqs() {
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                             <div className='faqs_content'>
                                 <Accordion allowMultipleExpanded allowZeroExpanded>
-                                    {FaqsData.map(function(value){
+                                    {FaqsData.slice(0, next).map(function(value, index){
                                         return(
-                                            <AccordionItem className='faq_item'>
+                                            <AccordionItem key={index} className='faq_item'>
                                                 <AccordionItemHeading className='faq_title'>
                                                     <AccordionItemButton>{value.title}</AccordionItemButton>
                                                 </AccordionItemHeading>
@@ -39,7 +46,24 @@ function Faqs() {
                                         );
                                     })}
                                 </Accordion>
+                                {next < FaqsData?.length && (
+                                    <div className='global_btn'>
+                                        <a className="btn_text" onClick={loadFaqs}>Load More</a>
+                                    </div>
+                                )}
+                        
                             </div>
+                            {/* <div className='faqs_content'>
+                                {FaqsData.map(function(value){
+                                    const {id, title, description} = value;
+                                    return(
+                                        <div key={id} className={`faq_item ${isActive ? 'active' : ''}`} onClick={ activeTab }>
+                                            <h2 className='faq_title'>{title}</h2>
+                                            <p className='faq_desc'>{description}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div> */}
                         </Col>
                     </Row>
                 </Container>
