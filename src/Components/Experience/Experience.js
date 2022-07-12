@@ -34,7 +34,7 @@ function Experience() {
                                 <div className="experience_box">
                                     <h2 className="company_name">Abc web tech</h2>
                                     <h3 className="designation">Web Developer</h3>
-                                    <p class="total_time">Feb 2020 - Feb 2021 </p>
+                                    <p className="total_time">Feb 2020 - Feb 2021 </p>
                                 </div>
                             </div>
                         </Col>
