@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss';
+import menuData from '../Data/MenuData';
 import {Container, Row, Col} from 'react-bootstrap';
 import {Link, NavLink} from 'react-router-dom';
 
@@ -19,14 +20,13 @@ function Header() {
                         <Col className="menu_col" md={8}> 
                             <div className='header_menu'>
                                 <ul className='menu'>
-                                    <NavLink to="/">Home</NavLink>
-                                    <NavLink to="/about">About</NavLink>
-                                    <NavLink to="/skills">Skills</NavLink>
-                                    <NavLink to="/portfolio">Portfolio</NavLink>
-                                    <NavLink to="/testimonials">Testimonials</NavLink>
-                                    <NavLink to="/experience">Experience</NavLink>
-                                    <NavLink to="/faqs">Faqs</NavLink>
-                                    <NavLink to="/contact">Contact</NavLink>
+                                    {menuData.map(function(value, index){
+                                        return (
+                                            <>
+                                                <NavLink to={value.path}>{value.item}</NavLink>
+                                            </>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </Col>
