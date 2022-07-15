@@ -25,33 +25,41 @@
 
         .accordion {
             border: 0;
+        }
 
-            .faq_item {
-                margin-bottom: 20px;
-                border: 1px solid #576f72;
-    
-                &:last-child {
-                    margin-bottom: 0;
-                }
-                
-                .accordion__button {
-                    font-size: 20px;
-                    text-align: left;
-                    padding: 15px;
-                    background-color: #576f72;
-                    color: #fff;
-                    position: relative;
-                    margin: 0;
-                    cursor: pointer;
-                }
-        
+        .faq_item {
+            margin-bottom: 20px;
+            border: 1px solid #576f72;
+
+            &.active {
+
                 .faq_desc {
-                    text-align: left;
-                    padding: 10px 15px 15px;
+                    display: block;
+                }
+            }
 
-                    p {
-                        margin: 0;
-                    }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            
+            .accordion__button, .faq_title {
+                font-size: 20px;
+                text-align: left;
+                padding: 15px;
+                background-color: #576f72;
+                color: #fff;
+                position: relative;
+                margin: 0;
+                cursor: pointer;
+            }
+    
+            .faq_desc {
+                text-align: left;
+                padding: 10px 15px 15px;
+                display: none;
+
+                p {
+                    margin: 0;
                 }
             }
         }
