@@ -29,21 +29,58 @@
                 margin: 0;
                 padding: 0;
 
-                a {
-                    color: #fff;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 1.5;
-                    display: inline-block;
-                    transition: all 0.2s linear;
-                    font-family: 'Nunito', sans-serif;
+                li {
+                    position: relative;
 
-                    &:hover, &.active {
-                        color: #E4DCCF;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 2;
+                        display: inline-block;
+                        transition: all 0.2s linear;
+                        font-family: 'Nunito', sans-serif;
+    
+                        &:hover, &.active {
+                            color: #E4DCCF;
+                        }
+                    }
+
+                    .submenu {
+                        display: none;
+                        background-color: #f0ebe3;
+                        position: absolute;
+                        top: 100%;
+                        text-align: left;
+                        box-shadow: 0 0 14px -6px #576f72;
+
+                        &:hover {
+                            display: block;
+                        }
+
+                        a {
+                            color: #576f72;
+                            padding: 10px 15px;
+                            display: block;
+                            line-height: 1;
+
+                            &:hover {
+                                background-color: #576f72;
+                                color: #f0ebe3;
+                            }
+                        }
+                    }
+
+                    &.active {
+
+                        .submenu {
+                            display: block;
+                        }
                     }
                 }
+
             }
         }
     }

@@ -1,12 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Header.scss';
 import menuData from '../Data/MenuData';
 import {Container, Row, Col} from 'react-bootstrap';
 import {Link, NavLink} from 'react-router-dom';
+import {FaAngleDown} from 'react-icons/fa';
 
 
 
 function Header() {
+
+    function addClass(event) {
+        event.currentTarget.classList.add('active');
+    }
+
+    function removeClass(event) {
+        event.currentTarget.classList.remove('active');
+    }
 
     return (
 
@@ -23,7 +32,28 @@ function Header() {
                                     {menuData.map(function(value, index){
                                         return (
                                             <>
-                                                <NavLink to={value.path}>{value.item}</NavLink>
+                                                <li key={index} onMouseEnter={addClass} onMouseLeave={removeClass}>
+                                                    <NavLink to={value.path}> 
+                                                        {value.item} 
+                                                        {'submenu' in value ? <span className='arrow'>{<FaAngleDown />}</span> : '' }
+                                                    </NavLink>
+
+                                                    { 'submenu' in value ? 
+                                                      <ul className='submenu'>
+                                                            {value.submenu.map(function(subvalue){
+                                                                return (
+                                                                    <>
+                                                                        <li>
+                                                                            <NavLink to={subvalue.path}>{subvalue.item}</NavLink>
+                                                                        </li>     
+                                                                    </>
+                                                                );
+                                                            })}
+                                                        </ul>
+                                                    : ''
+
+                                                    }
+                                                </li>
                                             </>
                                         );
                                     })}

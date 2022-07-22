@@ -9,10 +9,12 @@ const menuData = [
         path: '/about',
         submenu: [
             {
-                item: 'Skills'
+                item: 'Skills',
+                path: '/skills'
             },
             {
-                item: 'Experience'
+                item: 'Experience',
+                path: '/experience'
             }
         ]
     }
