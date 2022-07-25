@@ -20,11 +20,6 @@ const menuData = [
     }
     ,
     {
-        item: 'Skills',
-        path: '/skills'
-    }
-    ,
-    {
         item: 'Portfolio',
         path: '/portfolio'
     }
@@ -32,11 +27,6 @@ const menuData = [
     {
         item: 'Testimonials',
         path: '/testimonials'
-    }
-    ,
-    {
-        item: 'Experience',
-        path: '/experience'
     }
     ,
     {

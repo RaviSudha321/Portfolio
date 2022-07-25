@@ -6,15 +6,12 @@
         align-items: center;
 
         .logo_col {
-            color: #fff;
-            font-size: 50px;
-            line-height: 1;
             text-align: left;
-            font-family: 'Marck Script', sans-serif;
 
             a {
+                font-size: 50px;
                 color: #fff;
-                text-decoration: none;
+                font-family: 'Marck Script', sans-serif;
             }
         }
 
@@ -34,15 +31,12 @@
 
                     a {
                         color: #fff;
-                        text-decoration: none;
                         display: inline-block;
                         font-weight: 600;
                         font-size: 18px;
                         line-height: 2;
                         display: inline-block;
-                        transition: all 0.2s linear;
-                        font-family: 'Nunito', sans-serif;
-    
+
                         &:hover, &.active {
                             color: #E4DCCF;
                         }

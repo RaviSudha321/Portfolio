@@ -4,14 +4,7 @@
     min-height: calc(100vh - 154px);
     display: flex;
     align-items: center;
-    font-family: 'Nunito', sans-serif;
-
-    .title {
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 1;
-    }
-
+    
     .testimonial_carousel {
         margin-top: 50px;
 
@@ -21,7 +14,7 @@
             .author_name {
                 font-size: 30px;
                 font-weight: 600;
-            }
+            } 
     
             .author_profile {
                 font-size: 18px;

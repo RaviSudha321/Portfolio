@@ -1,0 +1,80 @@
+@mixin global_btn {
+  margin-top: 40px;
+}
+
+@mixin btn_text {
+    text-decoration: none;
+    color: #576f72;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #576f72;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 7px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #576f72;
+      color: #fff;
+    }
+}
+
+@mixin title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+@mixin paragraph {
+  font-size: 18px;
+  line-height: 1.7; 
+}
+
+@mixin link {
+  color: #7D9D9C;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  font-size: 16px;
+  line-height: 1.3;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+@mixin heading_3 {
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+.title {
+  @include title;
+}
+
+p {
+  @include paragraph;
+}
+
+.global_btn {
+  @include global_btn;
+
+  .btn_text {
+    @include btn_text;
+  }
+}
+
+body a {
+  @include link;
+}
+
+body h3 {
+  @include heading_3;
+}

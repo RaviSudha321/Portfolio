@@ -5,20 +5,6 @@
     align-items: center;
     min-height: calc(100vh - 154px);
 
-    .title {
-        font-size: 36px;
-        font-family: "Nunito", sans-serif;
-        font-weight: 600;
-        line-height: 1;
-        margin-bottom: 20px;
-    }
-
-    p {
-        font-size: 18px;
-        font-family: "Nunito", sans-serif;
-        line-height: 1.7;
-    }
-
     .skills_inner_sec {
         display: flex;
         align-items: flex-start;
@@ -33,7 +19,6 @@
             .skill_title {
                 font-size: 24px;
                 line-height: 1.3;
-                font-family: "Nunito", sans-serif;
                 font-weight: 600;
             }
 
@@ -43,7 +28,6 @@
 
                 .progress-bar {
                     background-color: #576f72;
-                    font-family: 'Nunito', sans-serif;
                   }
             }
         }
