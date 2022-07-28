@@ -11,6 +11,7 @@
             a {
                 font-size: 50px;
                 color: #fff;
+                line-height: 1;
                 font-family: 'Marck Script', sans-serif;
             }
         }
@@ -48,6 +49,7 @@
                         position: absolute;
                         top: 100%;
                         text-align: left;
+                        width: max-content;
                         box-shadow: 0 0 14px -6px #576f72;
 
                         &:hover {

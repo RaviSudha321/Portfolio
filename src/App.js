@@ -11,6 +11,7 @@ import Portfolio from './Components/Portfolio/Portfolio.js';
 import Error from './Components/Error/Error.js';
 import Testimonials from './Components/Testimonials/Testimonial.js';
 import Faqs from './Components/Faqs/Faqs.js';
+import PostApi from './Components/PostApi.js/PostApi';
 
 import { Routes, Route } from "react-router-dom";
 
@@ -30,6 +31,7 @@ function App() {
               <Route path="/experience" element={<Experience />} />
               <Route path="/faqs" element={<Faqs />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/post-api" element={<PostApi />} />
               <Route path="/*" element={<Error />} />
             </Routes>
           <Footer />

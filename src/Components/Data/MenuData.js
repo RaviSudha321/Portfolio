@@ -36,6 +36,16 @@ const menuData = [
     {
         item: 'Contact',
         path: '/contact'
+    },
+    {
+        item: 'Practice',
+        path: '/practice',
+        submenu: [
+            {
+                item: 'Post API',
+                path: '/post-api'
+            }
+        ]
     }
 
 ]

@@ -1,0 +1,23 @@
+.posts_main_sec {
+    padding: 80px 0;
+    background-color: #F0EBE3;
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 154px);
+    font-family: "Nunito", sans-serif;
+
+    .posts_content {
+        margin-top: 50px;
+
+        .post_item {
+            text-align: left;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 11px -7px #576f72;
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+}
