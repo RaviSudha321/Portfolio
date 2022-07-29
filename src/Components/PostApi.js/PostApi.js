@@ -31,7 +31,6 @@ function PostApi() {
         .then((actualData) => {
             setData(actualData);
             setError(null);
-            console.log(data);
         })
         .catch((error) => {
             setError(error.message);
